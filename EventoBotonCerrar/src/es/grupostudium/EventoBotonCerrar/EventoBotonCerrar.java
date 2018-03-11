@@ -3,7 +3,7 @@ package es.grupostudium.EventoBotonCerrar;
 import java.awt.*;
 import java.awt.event.*;
 //Declaramos nuestra clase que hereda de Frame e implementa
-//WindowListener y ActionListener para el bot髇
+//WindowListener y ActionListener para el bot贸n
 public class EventoBotonCerrar extends Frame implements
 WindowListener, ActionListener
 {
@@ -12,10 +12,10 @@ WindowListener, ActionListener
 	public EventoBotonCerrar()
 	{
 		setLayout(new FlowLayout());
-		setTitle("Bot髇 que cierra la ventana");
+		setTitle("Bot贸n que cierra la ventana");
 		add(btnBoton);
 		addWindowListener(this);
-		//A馻dir el listener al bot髇
+		//A帽adir el listener al bot贸n
 		btnBoton.addActionListener(this);
 		setSize(100,100);
 		setVisible(true);
@@ -24,7 +24,7 @@ WindowListener, ActionListener
 	{
 		new EventoBotonCerrar();
 	}
-	//A continuaci髇 debemos colocar el m閠odo de la clase
+	//A continuaci贸n debemos colocar el m茅todo de la clase
 	//abstracta ActionListener
 	public void actionPerformed(ActionEvent ae)
 	{
@@ -36,6 +36,7 @@ WindowListener, ActionListener
 	{
 		System.exit(0);
 	}
+	//Rafael Robles Mayoral.
 	public void windowDeactivated(WindowEvent we) {}
 	public void windowDeiconified(WindowEvent we) {}
 	public void windowIconified(WindowEvent we) {}
